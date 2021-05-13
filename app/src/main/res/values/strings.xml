@@ -22,4 +22,5 @@
     <string name="player_name">Player name</string>
     <string name="username">username</string>
     <string name="gameid">Gameid</string>
+    <string name="go_back">Go Back</string>
 </resources>

@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/tictaco"
     tools:context=".GameActivity">
 
     <TextView
-        android:id="@+id/players"
+        android:id="@+id/gameid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="686dp"
@@ -18,6 +17,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="686dp"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintTop_toBottomOf="@+id/gameid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
     <TextView
         android:id="@+id/status"
         android:layout_width="wrap_content"
@@ -30,6 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/players"/>
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -47,30 +57,28 @@
                 android:id="@+id/r1b1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="60sp"
-                android:layout_margin="4dp"/>
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/r1b2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="60sp"
-                android:layout_margin="4dp"
-                />
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/r1b3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="60sp"
-                android:layout_margin="4dp"
-                />
+                android:textSize="60sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -82,30 +90,28 @@
                 android:id="@+id/r2b1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="60sp"
-                android:layout_margin="4dp"/>
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/r2b2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="60sp"
-                android:layout_margin="4dp"
-                />
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/r2b3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="60sp"
-                android:layout_margin="4dp"
-                />
+                android:textSize="60sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -117,31 +123,44 @@
                 android:id="@+id/r3b1"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="60sp"
-                android:layout_margin="4dp"/>
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/r3b2"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="60sp"
-                android:layout_margin="4dp"/>
+                android:textSize="60sp" />
 
             <Button
                 android:id="@+id/r3b3"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_margin="4dp"
                 android:layout_weight="1"
                 android:text=""
-                android:textSize="60sp"
-                android:layout_margin="4dp"/>
+                android:textSize="60sp" />
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/gobackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/go_back"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="5"
+        app:layout_constraintWidth_percent="0.75" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
