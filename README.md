@@ -5,10 +5,17 @@ Den har funksjonalitet til å lage spill, joine spill som andre har laget med en
 Har lagt med noen bilder av appen i action.
 
 Her er startskjermen:
+
 ![Bilde1:)](https://github.com/maribe16/mariustictaco/blob/main/bilder/Startskjerm.PNG)
+
 Her kan man se et spill.
+
 ![Bilde2:)](https://github.com/maribe16/mariustictaco/blob/main/bilder/spiller%20og%20gameid.PNG)
+
 Her har man når man vinner.
+
 ![Bilde3:)](https://github.com/maribe16/mariustictaco/blob/main/bilder/Winner.PNG)
+
 Her har man når det er uavgjort.
+
 ![Bilde4:)](https://github.com/maribe16/mariustictaco/blob/main/bilder/Draw.PNG)
